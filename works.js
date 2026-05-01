@@ -45,9 +45,12 @@ async function loadAllGalleries(worksInfo) {
         var infoContainer = document.createElement(`td`);
         var memberName = document.createElement(`a`);
 
-        memberName.href = info[1];
+        if(info[1] != "" && info[1] != null){
+            memberName.href = info[1];
+            memberName.target = "_blank";
+        }
         memberName.innerHTML = `${info[0]} 作`;
-        memberName.target = "_blank";
+        
 
         infoContainer.appendChild(memberName);
         rowContainer1.appendChild(infoContainer);
@@ -77,8 +80,10 @@ async function loadAllGalleries(worksInfo) {
 
                         imageContainer.className = "artworks_td";
                         img.className = "artworks";
-                        imageLink.href = img.src; // リンク先
-                        imageLink.target = "_blank";
+                        if(img.src != "" && img.src != null){
+                            imageLink.href = img.src; // リンク先
+                            imageLink.target = "_blank";
+                        }
 
                         imageLink.appendChild(img);        // a の中に img を入れる
                         imageContainer.appendChild(imageLink); // td の中に a を入れる
