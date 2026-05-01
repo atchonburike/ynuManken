@@ -82,7 +82,7 @@ async function loadAllGalleries(worksInfo) {
 
                         imageLink.appendChild(img);        // a の中に img を入れる
                         imageContainer.appendChild(imageLink); // td の中に a を入れる
-                        rowContainer2.appendChild(imageContainer);
+                        rowContainer2.insertBefore(imageContainer, rowContainer2.firstChild);
                         table.appendChild(rowContainer2);
                         tableContainer.appendChild(table);
                         i++;
