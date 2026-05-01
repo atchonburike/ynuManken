@@ -2,7 +2,6 @@
 body {
 	margin: 0;
 	padding: 0;
-	font-family: "ü‡ÉSÉVÉbÉN Medium", "ÉqÉâÉMÉmäpÉS Pro", "Hiragino Kaku Gothic Pro", "ÉÅÉCÉäÉI", "Meiryo", sans-serif;
 	line-height: 1.6;
     font-size: 16px;
 }
@@ -44,8 +43,10 @@ h2 {
 	padding: 4px 0;
 	border-bottom: 1px solid #999;
 }
-#content-wrapper {margin: 0 auto;
-    width: 694px;}
+#content-wrapper {
+    margin: 0 auto;
+    width: 694px;
+}
 main {
 	color: #333;
 }
@@ -166,4 +167,45 @@ h3 {
 h4 {
 	font-size: 14px;
 }
+}
+
+.link_header {
+    color:rgb(211, 244, 248);
+    text-decoration:underline;
+	font-size: 12px;
+}
+
+
+.artworks{
+    height: 300px;
+    width:fit-content;
+}
+
+.artworks_td{
+    width: fit-content;
+    margin: 2px;
+    white-space: nowrap;
+}
+
+.artworks_tr{
+    width: fit-content;
+    display: flex;
+    margin: 5px;
+}
+
+.works_table{
+    
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    display: inline-block;
+    min-width:800%;
+    width: fit-content;
+    margin-top:5px;
+}
+
+.works_table_container {
+    overflow-x: auto;
+    
+    margin-top:10px;
+    margin-bottom:10px;
 }
