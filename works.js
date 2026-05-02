@@ -29,6 +29,7 @@ async function loadCsvTo2DArray() {
 //     [`ぶりけ`,`https://x.com/sugiru_yaoyoros`],
 //     [`とっきー`, ``]
 // ]
+const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 async function loadAllGalleries(worksInfo) {
 
@@ -68,8 +69,8 @@ async function loadAllGalleries(worksInfo) {
                 await new Promise((resolve, reject) => {
                     const img = new Image();
                     // パスの組み立て（例: ./works/img0.jpg）
-                    img.src = `./${folderName}/${info[0]}/${i}.png`;
-                    console.log(`./${folderName}/${info[0]}/${i}.png`);
+                    img.src = `./${folderName}/${info[0]}/${i}.webp`;
+                    console.log(`./${folderName}/${info[0]}/${i}.webp`);
                     img.onload = () => {
 
                         console.log(`${i} を読み込んだ`);
