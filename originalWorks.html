@@ -53,6 +53,7 @@
         }
     </style>
     <script>
+        console.log("start");
         var selectcreater = 0;
         var selectpage = 0;
         
@@ -67,26 +68,20 @@
             console.log("click");
             icon0.style.display = 'block';
             iconno0.style.display = 'none';
-            createricon0.style.pointer-events = 'none';
             if(selectcreater === 1){
-                createricon1.style.pointer-events = 'auto';
             }
             else{
-                createricon2.style.pointer-events = 'auto';
             }
             selectcreater = 0;
         });
 
         createricon1.addEventListener('click',function(){
             console.log("click");
-            createricon1.style.pointer-events = 'none';
             if(selectcreater === 0){
                 icon0.style.display = 'none';
                 iconno0.style.display = 'block';
-                createricon0.style.pointer-events = 'auto';
             }
             else{
-                createricon2.style.pointer-events = 'auto';
             }
             selectcreater = 1;
         });
