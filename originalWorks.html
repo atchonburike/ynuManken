@@ -53,38 +53,53 @@
         }
     </style>
     <script>
-        var select-creater-num = 0;
+        var selectcreater = 0;
+        var selectpage = 0;
         
-        const createricon0 = document.getElementById("creaters-icon-top0");
-        const createricon1 = document.getElementById("creaters-icon-top1");
-        const createricon2 = document.getElementById("creaters-icon-top2");
+        const createricon0 = document.getElementById("creaters-icon-top");
+        const createricon1 = document.getElementById("creaters-icon-center");
+        const createricon2 = document.getElementById("creaters-icon-bottom");
+
+        const icon0 = document.getElementById("createricon1-select");
+        const iconno0 = document.getElementById("createricon1-noselect");
 
         createricon0.addEventListener('click',function(){
-            createricon0.classList.toggle('createricon-select');
-            createricon1.classList.toggle('createricon');
-            createricon2.classList.toggle('createricon');
+            icon0.style.display = 'block';
+            iconno0.style.display = 'none';
+            createricon0.style.pointer-events = 'none';
+            if(selectcreater == 1){
+                createricon1.style.pointer-events = 'auto';
+            }
+            else{
+                createricon2.style.pointer-events = 'auto';
+            }
+            selectcreater = 0;
         });
 
         createricon1.addEventListener('click',function(){
-            createricon1.classList.toggle('createricon-select');
-            createricon2.classList.toggle('createricon');
-            createricon0.classList.toggle('createricon');
+            createricon1.style.pointer-events = 'none';
+            if(selectcreater == 0){
+                icon0.style.display = 'none';
+                iconno0.style.display = 'block';
+                createricon0.style.pointer-events = 'auto';
+            }
+            else{
+                createricon2.style.pointer-events = 'auto';
+            }
+            selectcreater = 1;
         });
 
         createricon2.addEventListener('click',function(){
-            createricon2.classList.toggle('createricon-select');
-            createricon0.classList.toggle('createricon');
-            createricon1.classList.toggle('createricon');
         });
     </script>
     <style>
-        #creaters-icon-top0{
+        #creaters-icon-top{
             pointer-events: none;
         }
-        #creaters-icon-top1{
+        #creaters-icon-center{
             pointer-events: auto;
         }
-        #creaters-icon-top2{
+        #creaters-icon-bottom{
             pointer-events: auto;
         }
         #charas .charaimage-main {
@@ -195,15 +210,18 @@
 
     <div id="creaters">
         <div id="creaters-icon" style="position: relative;">
-            <button class="createricon-select" id="creaters-icon-top">
-                <img  style="top: 20px; left: 110px;" src="image/creater-icons/0.png" alt="Nelu.png" width="110" height="110"/>
-            </button>
-            <button class="createricon" id="creaters-icon-center">
-                <img style="top: 205px; left: 110px;" src="image/creater-icons/1.png" alt="???.png" width="110" height="110"/>
-            </button>
-            <button id="creaters-icon-top2" id="creaters-icon-bottom">
-                <img style="top: 370px; left: 110px;" src="image/creater-icons/2.png" alt="???.png" width="110" height="110"/>
-            </button>
+            <div id="creaters-icon-top">
+                <img class="createricon-select" id="createricon1-select" style="top: 20px; left: 110px;" src="image/creater-icons/0.png" alt="Nelu.png" width="110" height="110"/>
+                <img class="createricon" id="createricon1-noselect" style="top: 20px; left: 110px; display: none;" src="image/creater-icons/0.png" alt="Nelu.png" width="110" height="110"/>
+            </div>
+            <div id="creaters-icon-center">
+                <img class="createricon-select" id="createricon2-select" style="top: 205px; left: 110px; display: none;" src="image/creater-icons/1.png" alt="???.png" width="110" height="110"/>
+                <img class="createricon" id="createricon2-noselect" style="top: 205px; left: 110px;" src="image/creater-icons/1.png" alt="???.png" width="110" height="110"/>
+            </div>
+            <div id="creaters-icon-bottom">
+                <img class="createricon-select" id="createricon3-select" style="top: 370px; left: 110px; display: none;" src="image/creater-icons/2.png" alt="???.png" width="110" height="110"/>
+                <img class="createricon" id="createricon3-noselect" style="top: 370px; left: 110px;" src="image/creater-icons/2.png" alt="???.png" width="110" height="110"/>
+            </div>
         </div>
         <div class="creaters-names" style="position: relative;">
             <div class="icon-text" style="top: 133px;">Nelu</div>
