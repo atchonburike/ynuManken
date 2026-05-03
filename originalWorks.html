@@ -52,43 +52,6 @@
             -webkit-mask-size: auto 100%;
         }
     </style>
-    <script>
-        console.log("start");
-        var selectcreater = 0;
-        var selectpage = 0;
-        
-        const createricon0 = document.getElementById("creaters-icon-top");
-        const createricon1 = document.getElementById("creaters-icon-center");
-        const createricon2 = document.getElementById("creaters-icon-bottom");
-
-        const icon0 = document.getElementById("createricon1-select");
-        const iconno0 = document.getElementById("createricon1-noselect");
-
-        createricon0.addEventListener('click',function(){
-            console.log("click");
-            icon0.style.display = 'block';
-            iconno0.style.display = 'none';
-            if(selectcreater === 1){
-            }
-            else{
-            }
-            selectcreater = 0;
-        });
-
-        createricon1.addEventListener('click',function(){
-            console.log("click");
-            if(selectcreater === 0){
-                icon0.style.display = 'none';
-                iconno0.style.display = 'block';
-            }
-            else{
-            }
-            selectcreater = 1;
-        });
-
-        createricon2.addEventListener('click',function(){
-        });
-    </script>
     <style>
         #creaters-icon-top{
             pointer-events: none;
@@ -158,6 +121,43 @@
             margin-bottom: 0.1rem;
         }
     </style>
+    <script>
+        console.log("start");
+        var selectcreater = 0;
+        var selectpage = 0;
+        
+        const createricon0 = document.getElementById("creaters-icon-top");
+        const createricon1 = document.getElementById("creaters-icon-center");
+        const createricon2 = document.getElementById("creaters-icon-bottom");
+
+        const icon0 = document.getElementById("createricon1-select");
+        const iconno0 = document.getElementById("createricon1-noselect");
+
+        createricon0.addEventListener('click',function(){
+            console.log("click");
+            icon0.style.display = 'block';
+            iconno0.style.display = 'none';
+            if(selectcreater === 1){
+            }
+            else{
+            }
+            selectcreater = 0;
+        });
+
+        createricon1.addEventListener('click',function(){
+            console.log("click");
+            if(selectcreater === 0){
+                icon0.style.display = 'none';
+                iconno0.style.display = 'block';
+            }
+            else{
+            }
+            selectcreater = 1;
+        });
+
+        createricon2.addEventListener('click',function(){
+        });
+    </script>
     <style>
         #footer .footer-container {
             height: 40px;
