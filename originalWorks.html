@@ -64,6 +64,7 @@
         const iconno0 = document.getElementById("createricon1-noselect");
 
         createricon0.addEventListener('click',function(){
+            console.log("click");
             icon0.style.display = 'block';
             iconno0.style.display = 'none';
             createricon0.style.pointer-events = 'none';
@@ -77,6 +78,7 @@
         });
 
         createricon1.addEventListener('click',function(){
+            console.log("click");
             createricon1.style.pointer-events = 'none';
             if(selectcreater === 0){
                 icon0.style.display = 'none';
