@@ -67,7 +67,7 @@
             icon0.style.display = 'block';
             iconno0.style.display = 'none';
             createricon0.style.pointer-events = 'none';
-            if(selectcreater == 1){
+            if(selectcreater === 1){
                 createricon1.style.pointer-events = 'auto';
             }
             else{
@@ -78,7 +78,7 @@
 
         createricon1.addEventListener('click',function(){
             createricon1.style.pointer-events = 'none';
-            if(selectcreater == 0){
+            if(selectcreater === 0){
                 icon0.style.display = 'none';
                 iconno0.style.display = 'block';
                 createricon0.style.pointer-events = 'auto';
