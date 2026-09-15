@@ -1,0 +1,18 @@
+footer {
+    padding-top: 50px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+}
+
+.footer-container {
+    width: 100%;
+    font-size: 18px;
+    margin: 0 auto;
+    vertical-align: bottom;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

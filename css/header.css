@@ -1,0 +1,192 @@
+@font-face {
+  font-family: 'MainFont';
+  src: 
+	url('./font/ZenMaruGothic-Medium.ttf') format('truetype');
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 160px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 170px;
+  z-index: 998;
+  background-color: rgba(0, 91, 172, 1);
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(126, 19, 42, 0.05);
+
+  transition: transform 0.3s ease;
+}
+
+header #header-wrap {
+  position: relative;
+    width: 80%;
+    height: 80%;
+    top: 0;
+    padding: 20px 5%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.menu-button {
+  position: absolute;
+    display: none;
+}
+
+#logo-img-wrap {
+  flex-direction: column;
+    column-gap: 10px;
+    height: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 80px;
+}
+
+/*
+#logo-img-wrap .logo-img {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+}
+*/
+
+#logo-img-wrap .logo-chara {
+    display: flex;       
+    height: 100%;
+    width: auto;
+    font-size: 50px;
+    color: white;
+    align-items: center;
+    margin: 0;
+}
+
+#logo-img-wrap .sub-logo-chara {
+    display: flex;
+    min-width: 206px;    
+    width: auto;
+    color: white;
+    object-fit: contain;
+    align-items: cover;
+    margin-top: 0;
+}
+
+#header-menu-nav #header-menu-group {
+  display: flex;       
+  list-style: none;
+  gap: 50px;           
+  margin: 0;
+  padding: 0;
+}
+
+.header-menu-item {
+    font-family: MenuFont;
+    font-size: 25px;
+}
+
+.header-menu-item a{
+    text-decoration: none;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 0.3s ease;
+}
+
+.header-menu-item:hover a{
+    color: white;
+}
+
+#page-top {
+    top: 180px;
+}
+
+@media screen and (max-width: 480px) {
+  .menu-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 22px;
+    height: 20px;
+    right: 5px;
+    top: 70%;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;
+  }
+
+  .menu-button span {
+    display: inline-block;
+    width: 22px;
+    height: 2px;
+    background-color: white;
+    transition: opacity 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+  }
+
+    header #header-wrap {
+        justify-content: center;
+    }
+
+    #header-menu-nav{
+      position: fixed;
+      top: 0;
+      left: -100%;
+      width: 60%; 
+      height: 300%;
+      background-color: rgba(239, 172, 185, 1);
+      box-shadow: 2px 0 10px rgba(100, 100, 100, 0.3);
+      padding-top: 150px;
+      padding-left: 10%;
+      transition: left 0.3s ease; 
+      z-index: 1000;
+    }
+
+    #header-menu-nav #header-menu-group {
+      flex-direction: column;
+      gap: 0;
+    }
+
+    #header-menu-nav.active {
+      left: 0; 
+    }
+
+
+    .menu-back span {
+      position: fixed;
+      top: 0;
+      left: -100%;
+      width: 100%; 
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0);
+      z-index: 999;
+      transition: background-color 0.3s ease; 
+    }
+
+    .menu-back.active span {
+      background-color: rgba(255, 255, 255, 0.8);
+      left: 0;
+    }
+
+    .menu-button.active span:nth-child(1) {
+      transform: rotate(45deg) translateY(11px);
+      background-color: black;
+    }
+    .menu-button.active span:nth-child(2) {
+      background-color: black;
+      opacity: 0; /* 中央の線を消す */
+    }
+    .menu-button.active span:nth-child(3) {
+      transform: rotate(-45deg) translateY(-11px);
+      background-color: black;
+    }
+}

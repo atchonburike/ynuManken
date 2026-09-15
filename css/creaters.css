@@ -1,0 +1,73 @@
+.content-describe{
+    display: flex;
+    width: calc(100%-80px);
+    padding: 0 80px;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+}
+
+#creaters-list-wrap {
+    display: flex;
+    width: 100%;
+    margin-top: 33px;
+    justify-content: center;
+    align-items: center;
+}
+
+#creaters-list-line {
+    display: grid; 
+    grid-template-columns: repeat(5, 1fr);
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    justify-content: center;
+    grid-gap: 40px 15px;
+    padding: 50px 100px;
+}
+
+.creaters-list {
+    flex-direction: column;
+    display: inline-flex;
+    width: 180px;
+    aspect-ratio: 5 / 7;  
+    max-width: 250px;
+    min-width: 150px;
+    justify-content: center;
+}
+
+.creater-icon-wrap {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    width: 100%;
+    aspect-ratio: 1;  
+    border-radius: 125px;
+    overflow: hidden;
+}
+
+.creater-icon-wrap .creater-icon {
+    display: flex;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.creater-icon-wrap:hover .creater-icon {
+    transform: scale(1.1); 
+}
+
+.creaters-list p {
+    display: flex;
+    font-size: 30px;
+    width: auto;
+    height: 72px;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.creaters-list .creater-name-15 {
+    font-size: 15px;
+}
