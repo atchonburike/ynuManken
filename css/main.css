@@ -61,9 +61,10 @@ main p{
     margin-top: 50px;
 }
 
-.subpage-title{
-    margin-top: 100px;
-    color: #ef86a1;
+.sub-title{
+    display: flex;
+    margin-top: 70px;
+    color: #99cad8;
     font-size: 50px;
     font-weight: bold;
     justify-content: center;
