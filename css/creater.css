@@ -1,0 +1,214 @@
+.comment {
+    font-style: italic;
+    font-size: 22px;
+    color: rgb(100, 100, 100);
+    margin-top: 20px;
+    margin-bottom: 24px;
+}
+
+#profile-wrap {
+    display: flex;
+    width: calc(100%-200px);
+    height: auto;
+    padding: 0 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+#profile-wrap .profile-icon{
+    display: flex;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+#profile-wrap .profile-con-wrap {
+    margin: 0 30px;
+    width: auto;
+    height: auto;
+    align-items: center;
+}
+
+.profile-con-wrap .profile-name {
+    font-size: 30px;
+}
+
+#gallery-img-back {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 8 / 3;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    /*background-color: rgb(50, 50, 50);*/
+}
+
+#gallery-img-back #gallery-img-wrap {
+    display: flex;
+    width: auto;
+    max-width: calc(50%-80px);
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 30px;
+}
+
+#gallery-img-wrap .gallery-img {
+    display: flex;
+    width: 100;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+#gallery-img-back .gallery-description {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    max-width: calc(50%-80px);
+    height: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 50px;
+    justify-content: center;
+    object-fit: contain;
+}
+
+.gallery-description .gallery-title {
+    font-size: 50px;
+    margin-left: 30px;
+}
+
+.gallery-description .gallery-comment {
+    font-size: 27px;
+    font-style: italic;
+    margin: 0;
+}
+
+.gallery-description .gallery-description-con {
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+#gallery-img-list-wrap {
+    display: flex;
+    width: 100%;
+    margin-top: 33px;
+    justify-content: center;
+    align-items: center;
+}
+
+#gallery-img-list {
+    display: grid; 
+    grid-template-columns: repeat(5, 1fr);
+    width: 1060px;
+    height: auto;
+    margin: 0 auto;
+    justify-content: center;
+    grid-gap: 15px 15px;
+    padding: 50px 100px;
+}
+
+.gallery-img-list-icon {
+    display: inline-flex;
+    width: 200px;
+    aspect-ratio: 1;  
+    justify-content: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.gallery-img-list-icon .gallery-img-list-icon-img {
+    width: auto;
+    aspect-ratio: 1;  
+    justify-content: center;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-img-list-icon:hover .gallery-img-list-icon-img {
+    transform: scale(1.1); 
+}
+
+#mail-adress {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+#mail-adress p{
+    font-size: 30px;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+#URL-list {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    gap: 30px;
+}
+
+#URL-list .link-icon-wrap {
+    display: flex;
+    height: 50px;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+#URL-list .act-link-icon-wrap {
+    display: flex;
+    height: 50px;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.link-icon-wrap .link-icon {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    opacity: 0.3;
+}
+
+#URL-list .act-link-icon-wrap {
+    display: flex;
+    height: 50px;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.act-link-icon-wrap .link-icon {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    opacity: 0.3;
+    transition: opacity 0.3s ease;
+}
+
+.act-link-icon-wrap:hover .link-icon {
+    opacity: 0.8;
+}
