@@ -255,6 +255,10 @@
         margin-top: 15px;
     }   
 
+    #URL-list .link-icon-wrap {
+        height: 30px;
+    }
+
     #URL-list .act-link-icon-wrap {
         height: 30px;
     }   
