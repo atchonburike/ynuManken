@@ -144,7 +144,7 @@
 }
 
 .gallery-img-list-icon .gallery-img-list-icon-img {
-    width: auto;
+    width: 100%;
     aspect-ratio: 1;  
     justify-content: center;
     object-fit: cover;
