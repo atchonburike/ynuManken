@@ -255,6 +255,11 @@
         margin-top: 15px;
     }   
 
+    #URL-list {
+        justify-content: center;
+        align-items: center;
+    }
+
     #URL-list .link-icon-wrap {
         height: 30px;
     }
