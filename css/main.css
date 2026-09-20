@@ -103,4 +103,8 @@ main p{
         margin: 20px 0;
         font-size: 30px;
     }
+
+    .creater-name-title{
+        font-size: 50px;
+    }
 }
