@@ -8,19 +8,37 @@
     <meta name="description" content="横浜国立大学　漫画・イラスト研究サークルのウェブサイトです">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="common.css">
+    <link rel="icon" href="./img/icon_sq.jpg">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/creaters.css">
 </head>
 
 <body>
     <div id="outer">
-        <header>
-            <div id="header-container">
-                <div id="head-inner">
-                    <h1>横国　漫画・イラスト研究サークル</h1>
-                    <p class="description">一次創作も二次創作も、楽しくイラストレーティング！</p>
-                    <a class = "link_header" href="index.html">ホーム</a>
-                    <a class = "link_header" href="works.html">作品集</a>
-                    <a class = "link_header" href="Creaters.html">クリエイター紹介</a>
+        <header id="header-id">
+            <div id="header-wrap">
+                <div id="logo-img-wrap">
+                    <h1 class="logo-chara">YNUCL</h1>
+                    <p class="sub-logo-chara">YNU Comic&Illustration Lab</p>
+                    <!--<img src="./img/Kasumiso_logo.png" alt="アイコンの写真" class="logo-img" >-->
                 </div>
+                <button class="menu-button" id="menu-button" aria-label="メニューボタン">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <nav id="header-menu-nav" class="header-menu-nav">
+                    <ul id="header-menu-group">
+                        <li class="header-menu-item"><a href="index.html">Home</a></li>
+                        <li class="header-menu-item"><a href="works.html">Gallery</a></li>
+                        <li class="header-menu-item"><a href="Creaters.html">Creaters</a></li>
+                        <li class="header-menu-item"><a href="https://x.com/YNUCLz" target="_blank">X</a></li>
+                        <li class="header-menu-item"><a href="https://www.instagram.com/ynucl_gram/"target="_blank">Instagram</a></li>
+                    </ul>
+                </nav>  
+                <div class="menu-back" id="menu-back"><span></span></div>
             </div>
         </header>
         <div id="content-wrapper">
